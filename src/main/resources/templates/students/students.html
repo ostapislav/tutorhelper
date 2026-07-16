@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Ученики</title>
+</head>
+<body>
+<div>
+    <h1>Список учеников</h1>
+
+    <a href="/students/new">Добавить ученика</a>
+
+    <table>
+        <thead>
+        <tr>
+            <th>ID</th>
+            <th>ФИО</th>
+            <th>Телефон</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr th:each="student : ${students}">
+            <td th:text="${student.id}">1</td>
+            <td th:text="${student.name}">Иванова Мария</td>
+            <td th:text="${student.contact}">+79123456789</td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+</body>
+</html>

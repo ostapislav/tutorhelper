@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Карточка ученика</title>
+</head>
+<body>
+
+<a href="/students">← Назад к списку</a>
+
+<hr>
+
+<h1 th:text="${student.name}">Иванова Мария Петровна</h1>
+
+<p><strong>Телефон:</strong> <span th:text="${student.contact}">+79123456789</span></p>
+
+
+</body>
+</html>
