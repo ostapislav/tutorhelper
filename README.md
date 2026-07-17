@@ -2,19 +2,6 @@
 
 **TutorHelper** — это сервис для автоматизации работы репетитора. Он помогает вести учёт учеников, составлять расписание, контролировать проведённые занятия и, самое главное, **автоматически считать долги по оплате**.
 
----
-
-## Быстрый старт (Docker)
-# Клонируйте репозиторий
-git clone https://github.com/ostapislav/tutorhelper.git
-cd tutorhelper
-
-# Соберите JAR и поднимите контейнеры
-./gradlew clean build
-docker-compose up --build
-
-## После запуска:
- Swagger UI (документация API): http://localhost:8080/swagger-ui/index.html
 ## Стек
 Язык:	Java 17
 Фреймворк:	Spring Boot 3.2.0
