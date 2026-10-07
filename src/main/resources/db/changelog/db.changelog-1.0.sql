@@ -1,7 +1,4 @@
 
-drop table lessons;
-drop table schedule;
-drop table students;
 
 
 CREATE TABLE students

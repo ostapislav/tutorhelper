@@ -1,8 +1,8 @@
 spring:
   datasource:
-    url: ${SPRING_DATASOURCE_URL:jdbc:postgresql://localhost:5432/tutor_db}
-    username: ${SPRING_DATASOURCE_USERNAME:postgres}
-    password: ${SPRING_DATASOURCE_PASSWORD:postgres}
+    url: ${DATASOURCE_URL:jdbc:postgresql://localhost:5432/tutor_db}
+    username: ${POSTGRES_USER:postgres}
+    password: ${POSTGRES_PASSWORD:123123}
     driver-class-name: org.postgresql.Driver
 
   jpa:
@@ -18,7 +18,7 @@ spring:
 
   liquibase:
     enabled: ${SPRING_LIQUIBASE_ENABLED:true}
-    change-log: classpath:db/changelog/db.changelog-master.xml
+    change-log: db/changelog/db.changelog-master.yaml
 
 server:
   port: 8080
